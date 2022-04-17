@@ -1,0 +1,10 @@
+{% extends 'sayhello/base.html' %} {% block content %}
+<form action="hi/" method="POST" class="container mt-4">
+    {% csrf_token %}
+    <div class="input-group  mb-3">
+        <span class="input-group-text " id="basic-addon1">Name</span>
+        <input type="text" name="fname" class="form-control " placeholder="your name" aria-label="your name" aria-describedby="basic-addon1">
+        <input type="submit" class="btn btn-secondary" value="submit">
+    </div>
+
+</form>{% endblock %}
